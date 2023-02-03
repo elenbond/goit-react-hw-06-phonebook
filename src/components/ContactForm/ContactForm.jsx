@@ -42,7 +42,7 @@ export const ContactForm = () => {
 
     const isExist = ({ name, number }) => { 
         const result = contacts.find(
-            contact => contact.name === name && contact.number === number
+            contact => contact.name === name || contact.number === number
         );
         return result;
     }
